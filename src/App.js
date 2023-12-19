@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="input">
         <input value={todo} onChange={(e)=>setTodo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
-        <i className="fas fa-plus"></i>
+        <i onClick={()=>setTodos([...todos,todo])} className="fas fa-plus"></i>
       </div>
       <div className="todos">
         <div className="todo">
